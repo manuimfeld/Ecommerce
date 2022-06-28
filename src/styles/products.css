@@ -28,9 +28,6 @@
     margin: 10px 0px;
 }
 
-.products input::placeholder {
-}
-
 .products ul {
     display: flex;
     flex-direction: column;
@@ -99,6 +96,12 @@
     background: var(--card-color);
 }
 
+@media (min-width: 200px) {
+    .products input[type=text] {
+        width: 50%;
+    }
+}
+
 @media (min-width: 480px) {
     .products ul {
         flex-direction: row;
@@ -128,6 +131,10 @@
 
     .products ul li {
         flex: 0 0 30%;
+    }
+
+    .products input[type=text] {
+        width: 20%;
     }
 }
 
