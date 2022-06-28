@@ -1,0 +1,42 @@
+.cart {
+    margin-top: 100px;
+    height: 100%;
+    width: auto;
+    padding: 0 50px;
+    background: #ebebeb73;
+}
+
+section {
+    width: 100%;
+    background: #ebebeb73;
+}
+
+.cart ul {
+    width: 50%;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.cart li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart li p:nth-child(1) {
+    width: 40%;
+}
+
+.cart li img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.cart {
+    text-align: center;
+}
