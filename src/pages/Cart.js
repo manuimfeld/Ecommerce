@@ -30,25 +30,28 @@ export const Cart = () => {
 
   return (
     <>
+    {cart.length > 0 ? (
     <main className="cart">
-      <section>
-          <ul>
-            {/* Recorro el state de cart, para conseguir los productos almacenados en el carrito de compras*/}
-            {cart.map(function (articulo) {
-              return (
-                <li key={articulo.id} >
-                  <p>{articulo.name}</p>
-                  <img src={articulo.img} alt="" />
-                  <p>{articulo.price.toLocaleString('en-US')}</p>
-                  <button onClick={() => deleteProduct(articulo)}>Borrar</button>
-                </li>
-              )
-            })}
-          </ul>
-          <button>Comprar ${total.toLocaleString('en-US')}</button>
-          <button onClick={() => setCart([])}>Borrar todo</button>
-      </section>
-    </main>
+    <section>
+      <h1>Carrito</h1>
+        <ul>
+          {/* Recorro el state de cart, para conseguir los productos almacenados en el carrito de compras*/}
+          {cart.map(function (articulo) {
+            return (
+              <li key={articulo.id} >
+                <img src={articulo.img} alt="" />
+                <p>{articulo.name}</p>
+                <p>{articulo.price.toLocaleString('en-US')}</p>
+                <button onClick={() => deleteProduct(articulo)}>Borrar</button>
+              </li>
+            )
+          })}
+        </ul>
+        <button>Comprar ${total.toLocaleString('en-US')}</button>
+        <button onClick={() => setCart([])}>Borrar todo</button>
+    </section>
+  </main>
+    ) : <main className='cart'><h1>No hay productos en el carrito</h1></main>}
     </>
   )
 }

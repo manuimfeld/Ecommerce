@@ -1,0 +1,17 @@
+.prodinfo {
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 0 15px;
+    background: var(--main-color);
+    text-align: center;
+    font-family: var(--font);
+}
+
+.prodinfo section {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

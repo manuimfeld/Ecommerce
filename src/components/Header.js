@@ -17,7 +17,7 @@ export const Header = () => {
         <nav>
             <ul>
                 <li className='logo'>
-                  <NavLink to="/inicio">Logo</NavLink>
+                  <NavLink to="/inicio"><img src="https://w7.pngwing.com/pngs/480/928/png-transparent-e-commerce-logo-electronic-business-business-blue-company-text.png" alt="" /></NavLink>
                 </li>
                 <li>
                   <NavLink to="/inicio">Inicio</NavLink>

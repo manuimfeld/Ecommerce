@@ -17,8 +17,9 @@ export const Products = () => {
   return (
     <>
       <main className='products'>
+        <h1>Todos los productos</h1>
         <section>
-          <input type="text" onChange={(e) => Contains(e)}/>
+          <input type="text" onChange={(e) => Contains(e)} placeholder="Buscar producto"/>
         <ul>
           {todos.map(function (articulo) {
           return (
